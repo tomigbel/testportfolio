@@ -23,7 +23,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;background:ra
 .pill.brand{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);font-weight:600}
 .wrap{display:grid;grid-template-columns:minmax(0,640px) minmax(200px,250px);gap:clamp(28px,4vw,56px);align-items:start;margin:0 24px 0 clamp(16px,7vw,190px);padding:40px 0 72px;position:relative}
 .main{min-width:0}
-.rail{position:sticky;top:32px;margin-top:26px;background:linear-gradient(#FFFFFF,#EFEFF2);border-radius:18px;padding:26px 24px;box-shadow:0 2px 8px rgba(0,0,0,.45),0 22px 54px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.9)}
+.rail{position:sticky;top:32px;margin-top:26px;background:linear-gradient(#FFFFFF,#EFEFF2);border-radius:18px;padding:26px 24px;box-shadow:0 2px 8px rgba(0,0,0,.45),0 22px 54px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.14)}
 .rmono{width:40px;height:40px;border-radius:50%;background:#0D0D0D;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:18px;box-shadow:0 2px 6px rgba(0,0,0,.25)}
 .rail .ilabel{color:#6E6E80;margin-top:20px;padding-top:20px;border-top:1px solid #E4E4EA}
 .rail .rmono + .ilabel{margin-top:0;padding-top:0;border-top:0}
@@ -315,12 +315,13 @@ footer b{color:var(--ink)}
 <aside class="rail">
   <div class="rmono">TG</div>
   <div class="ilabel">Why I built it</div>
-  <p class="ibody">The skepticism about ChatGPT ads is public. Advertisers read it before every meeting. I sold into rooms like that at Google for five years.</p>
+  <p class="ibody">The skepticism about ChatGPT ads is public and advertisers read it before every meeting. I sold into rooms like that at Google for five years, so I built the brief I'd actually use.</p>
   <div class="ilabel">Who built it</div>
-  <p class="ibody"><b>Tomi Gbeleyi</b><br>Toronto · Enterprise AE, CoLab AI</p>
+  <p class="ibody"><b>Tomi Gbeleyi</b><br>Toronto</p>
   <ul class="ilist">
-    <li>Google: sold ads to resistant, net-new advertisers. $28M quota to a $40M book at 120%.</li>
-    <li>Regulated-verticals ads GTM, zero to $10M+.</li>
+    <li>Google Canada: sold ads to resistant, net-new advertisers. $28M quota to a $40M book at 120%.</li>
+    <li>Built Google's regulated-verticals ads GTM from zero to $10M+.</li>
+    <li>Now: full-cycle enterprise sales into aerospace and defence, through security review and procurement.</li>
   </ul>
 </aside>
 
@@ -381,6 +382,7 @@ chips.forEach(c=>c.addEventListener('click',()=>{
 // Live demo auto-plays on load
 setTimeout(()=>runBrief('travel'),700);
 </script>
+
 
 </body>
 </html>
